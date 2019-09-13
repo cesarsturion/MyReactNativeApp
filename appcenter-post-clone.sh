@@ -14,6 +14,12 @@ rm $HOME/.sonar/sonar-scanner.zip
 export PATH=$SONAR_SCANNER_HOME/bin:$PATH
 export SONAR_SCANNER_OPTS="-server"
 
+echo "Instalacao concluida"
+
+ls -lha /Users/vsts/.sonar/sonar-scanner-4.0.0.1744-linux/jre/bin
+
+echo "Chamando a execução do sonar-scannner"
+
 sonar-scanner \
   -Dsonar.projectKey=MyReactNativeApp \
   -Dsonar.organization=cesarsturion \
