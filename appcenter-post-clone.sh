@@ -18,6 +18,9 @@ echo "Instalacao concluida"
 
 ls -lha /Users/vsts/.sonar/sonar-scanner-4.0.0.1744-linux/jre/bin
 
+echo "executando o uname"
+uname -a
+
 echo "Chamando a execução do sonar-scannner"
 
 sonar-scanner \
